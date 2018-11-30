@@ -28,7 +28,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_gravity="center"
-    android:text="이름 : " />
+    android:text="내핸드폰에금이갔네" />
 
     <TextView
         android:id="@+id/name"
