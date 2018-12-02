@@ -2,6 +2,10 @@ package com.example.hwhan.finalproject;
 import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.widget.GridLayoutManager;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
+import android.widget.AbsListView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -10,14 +14,33 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
 
+import java.util.ArrayList;
+import java.util.List;
+
 
 public class MainActivity extends AppCompatActivity
         implements OnMapReadyCallback {
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
+        List<CropData> testList = new ArrayList<>();
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_map);
+
+        RecyclerView cropview = (RecyclerView)findViewById(R.id.RV1);
+        RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
+        cropview.setLayoutManager(layoutManager);
+        testList.add(new CropData("감자", "30000", "5"));
+        CropListAdapter adapter = new CropListAdapter(testList);
+        cropview.setAdapter(adapter);
+
+
+
+
+        CropListAdapter adapter = new CropListAdapter();
 
         FragmentManager fragmentManager = getFragmentManager();
         MapFragment mapFragment = (MapFragment)fragmentManager

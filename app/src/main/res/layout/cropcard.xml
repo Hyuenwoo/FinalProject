@@ -28,7 +28,7 @@
     android:layout_height="wrap_content"
     android:layout_marginLeft="10dp"
     android:layout_gravity="center"
-    android:text="내핸드폰이고쳐졌네;;" />
+    android:text="작물이름 : " />
 
     <TextView
         android:id="@+id/name"
@@ -66,4 +66,11 @@
 
 
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="@android:color/darker_gray"
+        android:layout_below="@+id/aurthorText"/>
+
+
 </LinearLayout>
