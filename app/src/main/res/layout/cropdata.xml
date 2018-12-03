@@ -51,8 +51,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/aurthorText"/>
+        android:background="@android:color/darker_gray" />
     <View
         android:layout_width="match_parent"
         android:layout_height="1dp"
@@ -102,8 +101,7 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/aurthorText"/>
+        android:background="@android:color/darker_gray"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -148,6 +146,5 @@
     <View
         android:layout_width="match_parent"
         android:layout_height="2dp"
-        android:background="@android:color/darker_gray"
-        android:layout_below="@+id/aurthorText"/>
+        android:background="@android:color/darker_gray"/>
 </LinearLayout>
