@@ -1,5 +1,5 @@
 package com.example.hwhan.finalproject;
-
+/*
 public class CropData {
     private String name;
     private String price;
@@ -33,5 +33,22 @@ public class CropData {
 
     public void setLevel(String level) {
         this.level = level;
+    }
+}*/
+
+
+import android.content.Intent;
+import android.support.v7.app.AppCompatActivity;
+import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.Toast;
+
+public class CropData extends AppCompatActivity {
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.cropdata);
     }
 }

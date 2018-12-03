@@ -1,3 +1,4 @@
+/*
 package com.example.hwhan.finalproject;
 
 import android.database.CrossProcessCursor;
@@ -52,4 +53,5 @@ public class CropListAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolde
         }
     }
 }
+*/
 

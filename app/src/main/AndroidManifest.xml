@@ -14,7 +14,19 @@
             android:name="com.google.android.geo.API_KEY"
             android:value="AIzaSyAV0Bv7CVkl_38zDjtHJMCLKbA0rz9jw-c"/>
 
-        <activity android:name=".MainActivity">
+        <activity android:name=".MainActivity"/>
+           <!-- <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>-->
+
+        <activity android:name=".SearchActivity"/>
+        <activity android:name=".MyLocate"/>
+        <activity android:name=".ChoiceCrop"/>
+        <activity android:name=".Calculate"/>
+        <activity android:name=".CropData"/>
+        <activity android:name=".MainMenu">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
