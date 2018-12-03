@@ -2,10 +2,8 @@ package com.example.hwhan.finalproject;
 import android.app.FragmentManager;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
-import android.support.v7.widget.GridLayoutManager;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.widget.AbsListView;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -30,17 +28,14 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.show_map);
 
-        RecyclerView cropview = (RecyclerView)findViewById(R.id.RV1);
+        RecyclerView CropView = findViewById(R.id.RV1);
         RecyclerView.LayoutManager layoutManager = new LinearLayoutManager(this);
-        cropview.setLayoutManager(layoutManager);
+        CropView.setLayoutManager(layoutManager);
         testList.add(new CropData("감자", "30000", "5"));
         CropListAdapter adapter = new CropListAdapter(testList);
-        cropview.setAdapter(adapter);
+        CropView.setAdapter(adapter);
 
 
-
-
-        CropListAdapter adapter = new CropListAdapter();
 
         FragmentManager fragmentManager = getFragmentManager();
         MapFragment mapFragment = (MapFragment)fragmentManager
